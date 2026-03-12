@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intel: La Evolución del Procesamiento</title>
+
+    <!-- Fuentes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&family=Space+Grotesk:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Swiper CSS (Para Carruseles) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Estilos Propios -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Fondo de Partículas Decorativas -->
+    <div class="bg-particles">
+        <div class="particle" style="top: 10%; left: 20%; width: 300px; height: 300px;"></div>
+        <div class="particle" style="top: 60%; left: 70%; width: 400px; height: 400px;"></div>
+        <div class="particle" style="top: 80%; left: 10%; width: 250px; height: 250px;"></div>
+    </div>
+
+    <!-- Navegación Glassmorphism -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" class="intel-spin">
+                    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="var(--primary-color)" stroke-width="2"
+                        stroke-linejoin="round" />
+                    <path d="M2 17L12 22L22 17" stroke="var(--primary-color)" stroke-width="2"
+                        stroke-linejoin="round" />
+                    <path d="M2 12L12 17L22 12" stroke="var(--primary-color)" stroke-width="2"
+                        stroke-linejoin="round" />
+                </svg>
+                Intel<span class="light-text">Historia</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#carrusel-historia">Galería</a></li>
+                <li><a href="#arquitectura">Arquitectura</a></li>
+                <li><a href="#tablas">Datos Técnicos</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header / Hero Section con Typing Effect -->
+    <header id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="glow-text">El Corazón de la <br><span id="typing-text"></span><span class="cursor">|</span></h1>
+            <p class="hero-subtitle reveal">Desde operaciones simples hasta Inteligencia Artificial integrada, descubre
+                el impresionante viaje de la miniaturización en Intel.</p>
+            <div class="hero-buttons reveal delay-1">
+                <a href="#carrusel-historia" class="btn-primary">Ver Evolución</a>
+                <a href="#tablas" class="btn-outline">Ver Especificaciones</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de Carrusel: Historia en 3D -->
+    <section id="carrusel-historia" class="history-section">
+        <div class="section-header reveal">
+            <h2>Galería Histórica de Procesadores</h2>
+            <p>Desliza para explorar las CPU que definieron sus respectivas décadas.</p>
+        </div>
+
+        <div class="swiper mySwiper reveal delay-1">
+            <div class="swiper-wrapper">
+
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="slide-card">
+                        <div class="img-wrapper">
+                            <img src="images/intel4004.jpg" alt="Intel 4004">
+                            <div class="img-overlay">1971</div>
+                        </div>
+                        <div class="slide-info">
+                            <h3>Intel 4004</h3>
+                            <p>El pionero. Rompió barreras al empaquetar 2,300 transistores en un solo chip. Operaba a
+                                apenas 740 kHz en 4 bits.</p>
+                            <span class="badge">4 Bits</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="slide-card">
+                        <div class="img-wrapper">
+                            <img src="images/intel8086.jpg" alt="Intel 8086">
+                            <div class="img-overlay">1978</div>
+                        </div>
+                        <div class="slide-info">
+                            <h3>Intel 8086</h3>
+                            <p>El nacimiento de la arquitectura x86. Estableció el estándar de oro para el software que
+                                aún hoy emulan las PC modernas.</p>
+                            <span class="badge">16 Bits</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="slide-card">
+                        <div class="img-wrapper">
+                            <img src="images/intel80386.jpg" alt="Intel 80386">
+                            <div class="img-overlay">1985</div>
+                        </div>
+                        <div class="slide-info">
+                            <h3>Intel 80386</h3>
+                            <p>Trajo los 32 bits a las masas. Su capacidad para manejar memoria virtual y multitarea
+                                preventiva cambió los sistemas operativos (Windows/Linux).</p>
+                            <span class="badge">32 Bits</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="swiper-slide">
+                    <div class="slide-card">
+                        <div class="img-wrapper">
+                            <img src="images/pentium.jpg" alt="Pentium">
+                            <div class="img-overlay">1993</div>
+                        </div>
+                        <div class="slide-info">
+                            <h3>Pentium Original</h3>
+                            <p>Diseño superescalar capaz de ejecutar dos instrucciones por ciclo de reloj, impulsando el
+                                renacimiento multimedia de los años 90.</p>
+                            <span class="badge">Multitarea</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="swiper-slide">
+                    <div class="slide-card">
+                        <div class="img-wrapper">
+                            <img src="images/core.jpg" alt="Intel Core">
+                            <div class="img-overlay">2006+</div>
+                        </div>
+                        <div class="slide-info">
+                            <h3>Intel Core Series</h3>
+                            <p>Con la arquitectura "Conroe" y "Nehalem", Intel dominó implementando múltiples núcleos
+                                reales físicos y resucitando Hyper-Threading de forma espectacular.</p>
+                            <span class="badge">Multi-Core</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 6 -->
+                <div class="swiper-slide">
+                    <div class="slide-card">
+                        <div class="img-wrapper">
+                            <img src="images/ultrai9.jpg" alt="Intel Core i9">
+                            <div class="img-overlay">2017+</div>
+                        </div>
+                        <div class="slide-info">
+                            <h3>Intel Core i9 / Ultra</h3>
+                            <p>Rendimiento extremo con arquitectura híbrida (P-Cores y E-Cores). Integrando inteligencia
+                                artificial (NPU) en el ecosistema portátil y de escritorio.</p>
+                            <span class="badge">Híbrido + IA</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Controles del carrusel -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Sección Interactiva: Pilares de la Arquitectura -->
+    <section id="arquitectura" class="tech-grid reveal">
+        <div class="section-header">
+            <h2>Pilares Arquitectónicos Modernos</h2>
+            <p>Las tecnologías que han mantenido la Ley de Moore viva.</p>
+        </div>
+
+        <div class="bento-grid">
+
+            <div class="bento-box bg-dark gradient-border reveal">
+                <div class="bento-content">
+                    <div class="bento-icon">⚗️</div>
+                    <h3>Litografía Extrema</h3>
+                    <p>Intel ha pasado de usar luz ultravioleta tradicional a sistemas EUV (Luz Ultravioleta Extrema),
+                        permitiendo transistores que miden solo unos pocos átomos de grosor. La tecnología actual "Intel
+                        7" e "Intel 4" redefine la densidad.</p>
+                </div>
+            </div>
+
+            <div class="bento-box glass-box reveal delay-1">
+                <div class="bento-content">
+                    <div class="bento-icon">⚡</div>
+                    <h3>Eficiencia Híbrida</h3>
+                    <p>Inspirado en big.LITTLE, combina <strong>P-Cores</strong> para tareas de alto rendimiento
+                        (Gaming) y <strong>E-Cores</strong> altamente eficientes para procesos de fondo, todo gestionado
+                        inteligentemente por el <em>Intel Thread Director</em>.</p>
+                </div>
+            </div>
+
+            <div class="bento-box glass-box reveal delay-2">
+                <div class="bento-content">
+                    <div class="bento-icon">🧠</div>
+                    <h3>NPU & Machine Learning</h3>
+                    <p>Local AI acelerada en hardware. El Motor Neuronal permite difuminar fondos de cámara, procesar
+                        lenguaje natural local, y generar imágenes en tiempo real ahorrando batería enormemente.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Tablas de Datos Súper Detalladas -->
+    <section id="tablas" class="tables-section reveal">
+        <div class="section-header">
+            <h2>Datos Técnicos Expandidos</h2>
+            <p>Análisis exhaustivo de métricas de rendimiento y consumo a lo largo de décadas.</p>
+        </div>
+
+        <div class="table-container fade-in-up">
+            <div class="table-header">
+                <h3>Familias de Escritorio Doméstico y Entusiasta</h3>
+            </div>
+            <div class="table-wrapper">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Lanzamiento</th>
+                            <th>Procesador</th>
+                            <th>Arquitectura</th>
+                            <th>Litografía</th>
+                            <th>Núcleos / Hilos</th>
+                            <th>Frecuencias (Base / Max)</th>
+                            <th>Caché Total (L2+L3)</th>
+                            <th>TDP / Consumo</th>
+                            <th>Socket</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1978</td>
+                            <td>Intel 8086</td>
+                            <td>x86 Inicial</td>
+                            <td>3000 nm</td>
+                            <td>1 / 1</td>
+                            <td>5.0 MHz - 10.0 MHz</td>
+                            <td>N/A (Caché externa)</td>
+                            <td>~2.5 W</td>
+                            <td>DIP-40</td>
+                        </tr>
+                        <tr>
+                            <td>1993</td>
+                            <td>Pentium (P5)</td>
+                            <td>Superescalar P5</td>
+                            <td>800 nm</td>
+                            <td>1 / 1</td>
+                            <td>60 MHz - 66 MHz</td>
+                            <td>Dependía de la placa</td>
+                            <td>~16 W</td>
+                            <td>Socket 4</td>
+                        </tr>
+                        <tr>
+                            <td>2000</td>
+                            <td>Pentium 4</td>
+                            <td>NetBurst</td>
+                            <td>180 nm</td>
+                            <td>1 / 1 (Intro HT post)</td>
+                            <td>1.4 GHz - 1.5 GHz</td>
+                            <td>256 KB</td>
+                            <td>~55 W</td>
+                            <td>Socket 423</td>
+                        </tr>
+                        <tr>
+                            <td>2006</td>
+                            <td>Core 2 Duo E6600</td>
+                            <td>Conroe</td>
+                            <td>65 nm</td>
+                            <td>2 / 2</td>
+                            <td>2.40 GHz</td>
+                            <td>4 MB compartidos</td>
+                            <td>65 W</td>
+                            <td>LGA 775</td>
+                        </tr>
+                        <tr>
+                            <td>2011</td>
+                            <td>Core i7-2600K</td>
+                            <td>Sandy Bridge</td>
+                            <td>32 nm</td>
+                            <td>4 / 8</td>
+                            <td>3.40 GHz - 3.80 GHz</td>
+                            <td>1 MB L2 + 8 MB L3</td>
+                            <td>95 W</td>
+                            <td>LGA 1155</td>
+                        </tr>
+                        <tr>
+                            <td>2018</td>
+                            <td>Core i9-9900K</td>
+                            <td>Coffee Lake Ref</td>
+                            <td>14 nm++</td>
+                            <td>8 / 16</td>
+                            <td>3.60 GHz - 5.00 GHz</td>
+                            <td>2 MB L2 + 16 MB L3</td>
+                            <td>95 W (Real >150W)</td>
+                            <td>LGA 1151v2</td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td>2022</td>
+                            <td>Core i9-13900K</td>
+                            <td>Raptor Lake</td>
+                            <td>Intel 7 (10nm)</td>
+                            <td>24C (8P+16E) / 32T</td>
+                            <td>3.0 GHz - 5.8 GHz</td>
+                            <td>32 MB L2 + 36 MB L3</td>
+                            <td>253 W (Max Turbo)</td>
+                            <td>LGA 1700</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="table-container fade-in-up delay-1 mt-5">
+            <div class="table-header dark-header">
+                <h3>División HEDT & Servidores Profesionales (Familia Xeon)</h3>
+            </div>
+            <div class="table-wrapper">
+                <table class="data-table xeon-table">
+                    <thead>
+                        <tr>
+                            <th>Procesador Xeon</th>
+                            <th>Familia / Año</th>
+                            <th>Núcleos / Hilos</th>
+                            <th>Frecuencia Turbos</th>
+                            <th>Caché L3 Enorme</th>
+                            <th>Soporte RAM Máximo</th>
+                            <th>TDP / Calor</th>
+                            <th>Casos de Uso Ideales</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Xeon X5690</td>
+                            <td>Westmere-EP (2011)</td>
+                            <td>6 / 12</td>
+                            <td>3.73 GHz</td>
+                            <td>12 MB</td>
+                            <td>288 GB DDR3</td>
+                            <td>130 W</td>
+                            <td>Servidores PyME, Workstations clásicas.</td>
+                        </tr>
+                        <tr>
+                            <td>Xeon E5-2699 v4</td>
+                            <td>Broadwell-EP (2016)</td>
+                            <td>22 / 44</td>
+                            <td>3.60 GHz</td>
+                            <td>55 MB</td>
+                            <td>1.5 TB DDR4</td>
+                            <td>145 W</td>
+                            <td>Virtualización densa, Renderizado 3D masivo.</td>
+                        </tr>
+                        <tr>
+                            <td>Xeon Platinum 8380</td>
+                            <td>Ice Lake-SP (2021)</td>
+                            <td>40 / 80</td>
+                            <td>3.40 GHz</td>
+                            <td>60 MB</td>
+                            <td>6.0 TB DDR4</td>
+                            <td>270 W</td>
+                            <td>Nube Inteligente, Análisis Big Data (SAP HANA).</td>
+                        </tr>
+                        <tr class="highlight-row-dark">
+                            <td>Xeon Platinum 8592+</td>
+                            <td>Emerald Rapids (2023)</td>
+                            <td>64 / 128</td>
+                            <td>3.90 GHz</td>
+                            <td>320 MB</td>
+                            <td>Terabytes de DDR5</td>
+                            <td>350 W</td>
+                            <td>Entrenamiento de Inteligencia artificial, HPC extremo.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Moderno -->
+    <footer>
+        <div class="footer-glass">
+            <div class="footer-brand">
+                <h2>La Velocidad del Pensamiento</h2>
+                <p>Explorando el milagro de la ingeniería en semiconductores.</p>
+            </div>
+            <div class="footer-links">
+                <p>Estudio de Arquitectura de Computadoras - 2026 - Josué Pedroza, Sede San José Pinula</p>
+                <div class="socials">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts de Terceros -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Script Propio -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
